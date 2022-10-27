@@ -1,0 +1,194 @@
+.form {
+  h2 {
+    margin-top: 22px;
+    @include pc {
+      margin-top: calc(22vw / (1100 / 100));
+    }
+  }
+  p {
+    margin-top: 16px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    @include pc {
+      margin-top: calc(16vw / (1100 / 100));
+      font-size: calc(18vw / (1100 / 100));
+    }
+  }
+  &-wrap {
+    margin-top: 80px;
+    @include pc {
+      margin-top: calc(80vw / (1100 / 100));
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 52px 0;
+  font-size: 22px;
+  text-align: left;
+  @include pc {
+    gap: calc(52vw / (1280 / 100)) 0;
+    font-size: calc(22vw / (1280 / 100));
+  }
+  @include tab {
+    gap: calc(26vw / (768 / 100));
+    font-size: calc(22vw / (768 / 100));
+  }
+  @include sp {
+    gap: calc(22vw / (440 / 100));
+    font-size: calc(18vw / (440 / 100));
+  }
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    @include tab {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: calc(2vw / (768 / 100));
+    }
+    &-label {
+      width: 35%;
+      padding: 8px 0;
+      color: #fff;
+      letter-spacing: 0.2rem;
+      @include pc {
+        padding: calc(8vw / (1280 / 100)) 0;
+      }
+      @include tab {
+        width: 100%;
+        text-align: center;
+      }
+      &-text {
+        width: 100px;
+        @include pc {
+          width: calc(100vw / (1280 / 100));
+        }
+      }
+    }
+    .hissu {
+      &::after {
+        content: "※必須";
+        margin-left: -4px;
+        padding: 6px 10px;
+        color: #ff5f90;
+        font-size: 22px;
+        border-radius: 8px;
+        @include pc {
+          margin-left: calc(-4vw / (1280 / 100));
+          padding: calc(6vw / (1280 / 100)) calc(10vw / (1280 / 100));
+          font-size: calc(22vw / (1280 / 100));
+          border-radius: calc(8vw / (1280 / 100));
+        }
+        @include tab {
+          font-size: calc(20vw / (768 / 100));
+        }
+        @include sp {
+          font-size: calc(18vw / (440 / 100));
+        }
+      }
+    }
+    &-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      gap: 8px;
+      color: #fff;
+      @include tab {
+        width: 100%;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        padding: 8px 12px;
+        color: #444;
+        border-radius: 4px;
+        background: #fff;
+        @include pc {
+          padding: calc(8vw / (1280 / 100)) calc(12vw / (1280 / 100));
+          border-radius: calc(4vw / (1280 / 100));
+        }
+        @include tab {
+          padding: calc(8vw / (768 / 100)) calc(12vw / (768 / 100));
+          border-radius: calc(4vw / (768 / 100));
+          text-align: left;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 260px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        color: #fff;
+        background: #fff;
+        resize: none;
+        @include pc {
+          height: calc(260vw / (1280 / 100));
+          padding: calc(8vw / (1280 / 100)) calc(12vw / (1280 / 100));
+          border-radius: calc(4vw / (1280 / 100));
+        }
+        @include tab {
+          height: calc(340vw / (768 / 100));
+          margin-top: calc(22vw / (768 / 100));
+          border-radius: calc(4vw / (768 / 100));
+        }
+      }
+    }
+    .small {
+      width: 132px;
+      white-space: nowrap;
+      margin-right: auto;
+      margin-left: 68px;
+      @include pc {
+        width: calc(132vw / (1100 / 100));
+        margin-left: calc(68vw / (1100 / 100));
+      }
+      @include tab {
+        width: calc(200vw / (768 / 100));
+        margin: 0 auto;
+      }
+    }
+  }
+  &-textarea {
+    .form-box-label {
+      margin-right: auto;
+    }
+    .form-box-input {
+      width: 60%;
+      @include tab {
+        width: 100%;
+      }
+    }
+  }
+  &-desc {
+    text-align: center;
+    span {
+      color: $secondaryMain;
+    }
+  }
+  &-submit {
+    position: relative;
+    margin: 34px auto 0;
+    text-align: center;
+    @include pc {
+      margin: calc(34vw / (1280 / 100)) auto 0;
+    }
+    @include tab {
+      margin: calc(40vw / (768 / 100));
+    }
+    input {
+      width: 140px;
+      height: 40px;
+      color: rgba($color: #000000, $alpha: 0);
+      background: url(../images/form-submit.png) no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+.wpcf7-response-output {
+  color: #fff;
+}

@@ -1,0 +1,91 @@
+@import "mixin";
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover {
+    color: #888;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-variant-ligatures: none;
+  font-family: "小塚明朝 Pr6N", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", serif;
+  overflow-x: hidden;
+  color: $black;
+  font-weight: 500;
+  background: url(../images/body-bg.jpeg) repeat;
+  background-position: center top;
+}
+
+main {
+  padding: 8px 0;
+  @include pc {
+    padding: calc(8vw / (1100 / 100)) 0;
+  }
+}
+
+.gothic {
+  font-family: "小塚ゴシック Pr6N", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.pc {
+  display: block !important;
+  @include tab {
+    display: none !important;
+  }
+}
+
+.tab {
+  display: none !important;
+  @include tab {
+    display: block !important;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  @include center;
+}
+
+.flex {
+  @include flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.flex-around {
+  @include flex-around;
+}
+
+.section-title {
+  margin-top: 8px;
+  @include pc {
+    margin-top: calc(8vw / (1100 / 100));
+  }
+}
