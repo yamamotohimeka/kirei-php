@@ -1,0 +1,303 @@
+.first{
+  text-align: center;
+  color: #000047;
+  h2{
+    margin: 100px auto 20px;
+    width: 860px;
+    @include pc {
+      margin: calc(100vw / (1280 / 100)) auto calc(20vw / (1280 / 100));
+      width: calc(860vw / (1280 / 100));
+    }
+    @include tab {
+      margin: calc(70vw / (768 / 100)) auto calc(00vw / (768 / 100));
+      width: calc(700vw / (768 / 100));
+    }
+  }
+  h3{
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 46px;
+    letter-spacing: 0.04em;
+    @include pc {
+      margin-bottom: calc(90vw / (1280 / 100));
+      font-size: calc(46vw / (1280 / 100));
+    }
+    @include tab {
+      margin-bottom: calc(40vw / (768 / 100));
+      font-size: calc(44vw / (768 / 100));
+    }
+  }
+  p{
+    margin-bottom: 40px;
+    font-size: 30px;
+    @include pc {
+      margin-bottom: calc(40vw / (1280 / 100));
+      font-size: calc(30vw / (1280 / 100));
+    }
+    @include tab {
+      margin-bottom: calc(40vw / (768 / 100));
+      font-size: calc(32vw / (768 / 100));
+      line-height: 1.3;
+    }
+  }
+  &__plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    @include pc {
+      gap: calc(40vw / (1280 / 100));
+    }
+    @include tab {
+      flex-wrap: wrap;
+    }
+    &-base{
+      color: #9b0033 !important;
+      .first__plan-flex-ttl{
+        background: #9b0033;
+        &::after{
+          border-top: 70px solid #9b0033;
+          @include pc {
+            border-top: calc(70vw / (1280 / 100)) solid #9b0033;
+          }
+          @include tab {
+            bottom: calc(-86vw / (768 / 100));
+            border-right: calc(384vw / (768 / 100)) solid transparent;
+            border-left: calc(384vw / (768 / 100)) solid transparent;
+            border-top: calc(86vw / (768 / 100)) solid #9b0033;
+          }
+        }
+      }
+      .bg{
+        background: #9b0033 !important;
+      }
+    }
+    &-flex{
+      width: 470px;
+      color: #148cb8;
+      @include pc {
+        width: calc(
+          470vw / (1280 / 100));
+      }
+      @include tab {
+        width: calc(768vw / (768 / 100));
+      }
+      &-ttl{
+        position: relative;
+        margin-bottom:110px;
+        background: #148cb8;
+        height: 66px;
+        color: #fff;
+        @include pc {
+          margin-bottom: calc(110vw / (1280 / 100));
+          height: calc(66vw / (1280 / 100));
+        }
+        @include tab {
+          margin-bottom: calc(110vw / (768 / 100));
+          height: calc(110vw / (768 / 100));
+        }
+        &::after{
+          position: absolute;
+          left: 0;
+          bottom: -69.9px;
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-right: 235px solid transparent;
+          border-left: 235px solid transparent;
+          border-top: 70px solid #148cb8;
+          border-bottom: 0;
+          @include pc {
+            bottom: calc(-69vw / (1280 / 100));
+            border-right: calc(235vw / (1280 / 100)) solid transparent;
+            border-left: calc(235vw / (1280 / 100)) solid transparent;
+            border-top: calc(70vw / (1280 / 100)) solid #148cb8;
+          }
+          @include tab {
+            bottom: calc(-86vw / (768 / 100));
+            border-right: calc(384vw / (768 / 100)) solid transparent;
+            border-left: calc(384vw / (768 / 100)) solid transparent;
+            border-top: calc(86vw / (768 / 100)) solid #148cb8;
+          }
+        }
+        p{
+          padding-top: 16px;
+          margin-bottom: 6px;
+          font-size: 26px;
+          @include pc {
+            padding-top: calc(16vw / (1280 / 100));
+            margin-bottom: calc(6vw / (1280 / 100));
+            font-size: calc(26vw / (1280 / 100));
+          }
+          @include tab {
+            padding-top: calc(12vw / (768 / 100));
+            margin-bottom: calc(16vw / (768 / 100));
+            font-size: calc(44vw / (768 / 100));
+          }
+        }
+        h4{
+          position: absolute;
+          bottom: -28px;
+          left: 0;
+          right: 0;
+          z-index: 2;
+          font-size: 37px;
+          @include pc {
+            bottom: calc(-28vw / (1280 / 100));
+            font-size: calc(37vw / (1280 / 100));
+          }
+          @include tab {
+            bottom: calc(-34vw / (768 / 100));
+            font-size: calc(66vw / (768 / 100));
+          }
+        }
+      }
+      &-content{
+        p{
+          margin-bottom: 22px;
+          font-size:36px;
+          @include pc {
+            margin-bottom: calc(22vw / (1280 / 100));
+            font-size: calc(36vw / (1280 / 100));
+          }
+          @include tab {
+            margin-bottom: calc(10vw / (768 / 100));
+            font-size: calc(52vw / (768 / 100));
+            letter-spacing: 0.03em;
+          }
+        }
+        h5{
+          margin-bottom: 10px;
+          font-size: 48px;
+          letter-spacing: 0.1em;
+          @include pc {
+            margin-bottom: calc(10vw / (1280 / 100));
+            font-size: calc(48vw / (1280 / 100));
+          }
+          @include tab {
+            margin-bottom: calc(14vw / (768 / 100));
+            font-size: calc(75vw / (768 / 100));
+          }
+        }
+        .bg{
+          margin-bottom: 0px;
+          display: inline-block;
+          width: 330px;
+          background: #148cb8;
+          color: #fff;
+          padding: 2px 12px 5px;
+          letter-spacing: 0.05em;
+          @include pc {
+            width: calc(330vw / (1280 / 100));
+            padding: calc(2vw / (1280 / 100)) calc(12vw / (1280 / 100)) calc(5vw / (1280 / 100));
+          }
+          @include tab {
+            width: calc(590vw / (768 / 100));
+            font-size: calc(66vw / (768 / 100));
+          }
+        }
+        h6{
+          font-size:100px;
+          @include pc {
+            font-size: calc(100vw / (1280 / 100));
+          }
+          @include tab {
+            margin-bottom: calc(26vw / (768 / 100));
+            font-size: calc(160vw / (768 / 100));
+          }
+          span{
+            font-size: 64px;
+            @include pc {
+              font-size: calc(64vw / (1280 / 100));
+            }
+            @include tab {
+              font-size: calc(100vw / (768 / 100));
+            }
+          }
+        }
+      }
+    }
+  }
+  .caution{
+    margin: 50px auto 30px;
+    width: 840px;
+    @include pc {
+      margin: calc(50vw / (1280 / 100)) auto calc(30vw / (1280 / 100));
+      width: calc(840vw / (1280 / 100));
+    }
+    @include tab {
+      margin: calc(00vw / (768 / 100)) auto calc(0vw / (768 / 100));
+      width: calc(768vw / (768 / 100));
+      background: #9b0033;
+    }
+    p{
+      font-size: 18px;
+      text-align: left;
+      color: #000;
+      @include pc {
+        font-size: calc(18vw / (1280 / 100));
+      }
+      @include tab {
+        font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
+        padding: calc(20vw / (768 / 100)) calc(50vw / (768 / 100));
+        font-size: calc(26vw / (768 / 100));
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: calc(6vw / (768 / 100));
+      }
+    }
+  }
+  &__bottom{
+    h4{
+      margin-bottom: 16px;
+      font-size: 60px;
+      letter-spacing: 0.05em;
+      line-height: 1.4;
+      @include pc {
+        margin-bottom: calc(16vw / (1280 / 100));
+        font-size: calc(60vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom: calc(54vw / (768 / 100));
+        font-size: calc(45vw / (768 / 100));
+        color: #9b0033;
+        line-height: 1.3;
+      }
+    }
+    p{
+      margin-bottom: 0;
+      display: inline-block;
+      padding: 6px 16px 2px;
+      background: #000047;
+      color: #fff;
+      font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ; 
+      @include pc {
+        padding: calc(6vw / (1280 / 100)) calc(16vw / (1280 / 100)) calc(2vw / (1280 / 100));
+      }
+      @include tab {
+        background: #00b689;
+        font-size: calc(40vw / (768 / 100));
+      }
+    }
+    h6{
+      font-size: 44px;
+      @include pc {
+        font-size: calc(44vw / (1280 / 100));
+      }
+      @include tab {
+        color: #00b689;
+        font-size: calc(60vw / (768 / 100));
+      }
+      span{
+        font-size: 150px;
+        @include pc {
+          font-size: calc(150vw / (1280 / 100));
+        }
+        @include tab {
+          font-size: calc(200vw / (768 / 100));
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.flow {
+  position: relative;
+  .container {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    position: relative;
+    @include pc {
+      padding-top: calc(140vw / (1280 / 100));
+      padding-bottom: calc(90vw / (1280 / 100));
+    }
+    .img {
+      position: absolute;
+      right: 0;
+      top: 240px;
+      @include pc {
+        right: calc(30vw / (1280 / 100));
+        top: calc(240vw / (1280 / 100));
+      }
+      @include tab {
+        display: none;
+      }
+      img {
+        width: 300px;
+        @include pc {
+          width: calc(300vw / (1280 / 100));
+        }
+      }
+    }
+  }
+  .flow__step {
+    margin-left: 40px;
+    width: 730px;
+    @include pc {
+      margin-left: calc(40vw / (1280 / 100));
+      width: calc(730vw / (1280 / 100));
+    }
+    @include tab {
+      margin-left: calc(46vw / (768 / 100));
+      width: calc(670vw / (768 / 100));
+    }
+    h3 {
+      margin-bottom: 10px;
+      text-align: right;
+      font-size: 30px;
+      color: #7f7f80;
+      font-weight: bold;
+      @include pc {
+        margin-bottom: calc(10vw / (1280 / 100));
+        font-size: calc(30vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom: calc(6vw / (768 / 100));
+        font-size: calc(34vw / (768 / 100));
+      }
+    }
+    &-content {
+      margin-bottom: 46px;
+      @include pc {
+        margin-bottom: calc(46vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom: calc(42vw / (768 / 100));
+      }
+      width: 750px;
+      height: 195px;
+      background: url(../img/flow01.png) no-repeat;
+      background-size: contain;
+      background-position: top center;
+      @include pc {
+        width: calc(750vw / (1280 / 100));
+        height: calc(195vw / (1280 / 100));
+      }
+      @include tab {
+        width: calc(676vw / (768 / 100));
+        height: calc(180vw / (768 / 100));
+      }
+      p {
+        padding: 24px 20px 20px 100px;
+        color: #7f7f80;
+        font-size: 24px;
+        line-height: 1.5;
+        @include pc {
+          font-size: calc(24vw / (1280 / 100));
+          padding: calc(24vw / (1280 / 100)) calc(20vw / (1280 / 100))
+            calc(20vw / (1280 / 100)) calc(100vw / (1280 / 100));
+        }
+        @include tab {
+          padding: calc(24vw / (768 / 100)) calc(20vw / (768 / 100))
+            calc(20vw / (768 / 100)) calc(70vw / (768 / 100));
+          font-size: calc(22vw / (768 / 100));
+        }
+      }
+    }
+    .second-step {
+      background: url(../img/flow02.png) no-repeat;
+      background-size: contain;
+      background-position: top center;
+      height: 520px;
+    }
+    .last-step {
+      background: url(../img/flow03.png) no-repeat;
+      background-size: contain;
+      background-position: top center;
+    }
+  }
+}

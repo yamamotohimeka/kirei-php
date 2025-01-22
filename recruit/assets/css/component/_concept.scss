@@ -1,0 +1,193 @@
+.concept{
+  background: #a00000;
+  &-end{
+    background: #6800009d;
+    height:  60px;
+    @include pc {
+      height: calc(60vw / (1280 / 100));
+    }
+    @include tab {
+      height: calc(50vw / (768 / 100));
+    }
+  }
+  .bg-red{
+    background: url(../img/concept-bg.png) no-repeat;
+    min-height: 819px;
+    background-size: cover;
+    background-position: top center;
+    @include pc {
+      min-height: calc(819vw / (1280 / 100));
+    }
+    @include tab {
+      background-position: top calc(-90vw / (768 / 100)) left calc(-680vw / (768 / 100));
+      min-height: calc(400vw / (768 / 100));
+      background-size: calc(2400vw / (768 / 100)) calc(1220vw / (768 / 100));
+    }
+    .section-ttl{
+      background: #6800009d;
+      height:  100px;
+      font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ; 
+      @include pc {
+        height: calc(100vw / (1280 / 100));
+      }
+      @include tab {
+        height: calc(73vw / (768 / 100));
+      }
+      &-inner{
+        top: -30px;
+        left: 60px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @include tab {
+          top: calc(-20vw / (768 / 100));
+          left: calc(36vw / (768 / 100));
+          gap: calc(30vw / (768 / 100));
+        }
+        img{
+          width: 150px;
+          @include pc {
+            width: calc(150vw / (1280 / 100));
+          }
+          @include tab {
+            width: calc(110vw / (768 / 100));
+          }
+        }
+        h2{
+          margin-top: 16px;
+          color: #fff;
+          font-size: 40px;
+          letter-spacing: 0.04em;
+          @include pc {
+            margin-top: calc(16vw / (1280 / 100));
+            font-size: calc(40vw / (1280 / 100));
+          }
+          @include tab {
+            margin-top: calc(7vw / (768 / 100));
+            font-size: calc(43vw / (768 / 100));
+            letter-spacing: 0.08em;
+            font-weight: 500;
+          }
+        }
+            }
+    }
+  }
+  .container{
+    position: relative;
+    height: 819px;
+    @include pc {
+      height: calc(819vw / (1280 / 100));
+    }
+    @include tab {
+      height: calc(940vw / (768 / 100));
+    }
+  }
+  &__inner{
+    width: 1020px;
+    margin: 0 auto;
+    color: #fff;
+    @include pc {
+      width: calc(1020vw / (1280 / 100));
+    }
+    @include tab {
+      width: calc(670vw / (768 / 100));
+    }
+    h3{
+      margin-bottom: 16px;
+      margin-top: 190px;
+      font-size: 50px;
+      letter-spacing: 0.04em;
+      @include pc {
+        margin-bottom: calc(16vw / (1280 / 100));
+        margin-top: calc(190vw / (1280 / 100));
+        font-size: calc(50vw / (1280 / 100));
+      }
+      @include tab {
+        margin-top: calc(70vw / (768 / 100));
+        font-size: calc(40vw / (768 / 100));
+      }
+    }
+    h4{
+      margin-bottom: 60px;
+      font-size: 66px;
+      line-height: 1.3;
+      letter-spacing: 0.06em;
+      @include pc {
+        margin-bottom: calc(60vw / (1280 / 100));
+        font-size: calc(66vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom: calc(50vw / (768 / 100));
+        font-size: calc(48vw / (768 / 100));
+      }
+    }
+    h5{
+      margin-bottom: 26px;
+      font-size: 51px;
+      letter-spacing: 0.04em;
+      @include pc {
+        margin-bottom: calc(25vw / (1280 / 100));
+        font-size: calc(51vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom: calc(50vw / (768 / 100));
+        font-size: calc(48vw / (768 / 100));
+        line-height: 1.3;
+      }
+    }
+    p{
+      margin-bottom: 170px;
+      font-size: 34px;
+      line-height: 1.4;
+      letter-spacing: 0.04em;
+      @include pc {
+        margin-bottom: calc(170vw / (1280 / 100));
+        font-size: calc(34vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom: calc(50vw / (768 / 100));
+        font-size: calc(30vw / (768 / 100));
+      }
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px 20px;
+      @include pc {
+        gap: calc(24vw / (1280 / 100)) calc(20vw / (1280 / 100));
+      }
+      @include tab {
+        gap: calc(30vw / (768 / 100)) calc(26vw / (768 / 100));
+      }
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 235px;
+        height: 60px;
+        font-size: 30px;
+        background: #1a3144;
+        border: 1px solid #ffb800;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px #00030695;
+        @include pc {
+          width: calc(235vw / (1280 / 100));
+          height: calc(60vw / (1280 / 100));
+          font-size: calc(30vw / (1280 / 100));
+          border-radius: calc(10vw / (1280 / 100));
+          box-shadow: calc(4vw / (1280 / 100)) calc(4vw / (1280 / 100)) calc(8vw / (1280 / 100)) #00030695;
+        }
+        @include tab {
+          width: calc(280vw / (768 / 100));
+          height: calc(70vw / (768 / 100));
+          font-size: calc(38vw / (768 / 100));
+          border-radius: calc(14vw / (768 / 100));
+          box-shadow: calc(4vw / (768 / 100)) calc(4vw / (768 / 100)) calc(8vw / (768 / 100)) #00030695;
+        }
+      }
+    }
+  }
+}

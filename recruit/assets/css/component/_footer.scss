@@ -1,0 +1,92 @@
+footer{
+  background: #a60000;
+  color: #fff;
+  font-family: 'Noto Serif JP', serif;
+}
+.footer{
+  &__nav{
+    &__list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      font-size: 18px;
+      gap: 70px;
+      @include pc {
+        padding-top: calc(20vw / (1280 / 100));
+        font-size: calc(18vw / (1280 / 100));
+        gap: calc(70vw / (1280 / 100));
+      }
+      &-link{
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  &__tel{
+    text-align: right;
+    img{
+      width:400px;
+      margin: 60px 0 20px auto;
+      @include pc {
+        width: calc(400vw / (1280 / 100));
+        margin: calc(60vw / (1280 / 100)) 0 calc(20vw / (1280 / 100)) auto;
+      }
+    }
+  }
+  small{
+    display: block;
+    margin: 50px auto;
+    padding-bottom: 30px;
+    text-align: center;
+    @include pc {
+      margin: calc(50vw / (1280 / 100)) auto;
+      padding-bottom: calc(30vw / (1280 / 100));
+    }
+  }
+  &__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+      width: 300px;
+      @include pc {
+        width: calc(300vw / (1280 / 100));
+      }
+    }
+    .link{
+      width: 700px;
+      @include pc {
+        width: calc(700vw / (1280 / 100));
+      }
+    }
+  }
+  &__tab{
+    &-nav{
+      width: calc(768vw / (768 / 100));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include tab {
+
+        img{
+          width: calc(100vw / (768 / 100));
+        }
+      }
+      li{
+        @include tab {
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: calc(20vw / (768 / 100)) 0;
+            width: calc(388vw / (768 / 100));
+          }
+
+          &:first-of-type{
+            border-right: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,147 +1,66 @@
 <footer class="footer">
-  <div class="container">
-    <div class="footer-sales">
-      <a href="https://kirei-osaka.com/" target="_blank" rel="noopener">
-        <img src="<?php echo $path; ?>assets/images/footer-sales.png" alt="営業情報">
-      </a>
-    </div>
-    <?php if ($templete == 'top') :?>
-    <nav class="footer__banner">
-      <ul>
-        <li>
-          <a href="https://work-mikke.jp/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/mikke.jpg">
+  <div class="container pc">
+    <div class="footer__nav pc">
+      <ul class="footer__nav__list">
+        <li class="footer__nav__list-link">
+          <a href="#home" class="footer__link">
+            <p>トップ</p>
           </a>
         </li>
-        <li>
-          <a href="https://happyhellowork.com/rank.php?s=4" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/happy.gif">
+        <li class="footer__nav__list-link">
+          <a href="#concept" class="footer__link">
+            <p>コンセプト</p>
           </a>
         </li>
-        <li>
-          <a href="https://www.bwork.net/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/b_1.gif">
+        <li class="footer__nav__list-link">
+          <a href="#salary" class="footer__link">
+            <p>お給料について
+            </p>
           </a>
         </li>
-        <li>
-          <a href="https://q-pri.com/shop_list/area/102/102" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/q_1.png">
+        <li class="footer__nav__list-link">
+          <a href="#about" class="footer__link">
+            <p>待遇について</p>
           </a>
         </li>
-        <li>
-          <a href="https://q-pri.com/shop_list/area/102/102" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/q_2.png">
+
+        <li class="footer__nav__list-link">
+          <a href="#job" class="footer__link">
+            <p>お仕事について</p>
           </a>
         </li>
-        <li>
-          <a href="https://q-pri.com/shop_list/area/102/102" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/q_3.png">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.15navi.com/osaka/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/15_1.png">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.15navi.com/osaka/ma310/aa202/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/15_2.png">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_1.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_2.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_3.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_4.jpg">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.46job.jp/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/yj.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.kosyunyu.com/kansai/kita_umeda_togano/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/kc.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.fucolle.com/kansai/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/f.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.yorutomo.net" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/yt.jpg">
-          </a>
-        </li>
-        <li>
-          <a href="https://fujoho.jp/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/kuti.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://fuzoku.jp/kirei3/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/fj.jpg">
-          </a>
-        </li>
-        <li>
-          <a href="https://mens-qzin.jp/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/mv.gif">
+        <li class="footer__nav__list-link">
+          <a href="#contact" class="footer__link">
+            <p>応募</p>
           </a>
         </li>
       </ul>
-    </nav>
-    <?php endif; ?>
-    <?php include $path .'components/form.php';?>
-  </div>
-  <div class="footer__bottom">
-    <div class="container">
-      <nav class="footer__bottom__nav">
-        <ul>
-          <li>
-            <a href="<?php echo $path; ?>">
-              どんなお店？
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $path; ?>about.php">
-              お仕事の流れ
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $path; ?>service.php">
-              お給料〜応募するまで
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <p class="footer__bottom-name">
-        大阪　風俗　求人　キレイ
-      </p>
-      <p class="footer__bottom-copy">
-        Copyright(C) osaka club All Right Reserved.
-      </p>
     </div>
+    <div class="footer__tel">
+      <img src="<?php echo $path; ?>assets/img/footer-tel.png" alt="">
+    </div>
+    <div class="footer__flex">
+      <img class="logo" src="<?php echo $path; ?>assets/img/footer-logo.png" alt="">
+      <a target="_blank" class="link" href="../">
+        <img src="<?php echo $path; ?>assets/img/footer-link.png" alt="">
+      </a>
+    </div>
+
+    <small>Copyright(C) osaka club All Right Reserved.</small>
+
   </div>
-  <div class="page-top">
-    <img src="<?php echo $path; ?>assets/images/page-top.png" alt="TOPへ">
+  <div class="tab">
+    <ul class="footer__tab-nav">
+      <li><a href="tel:0120-779-965"><img src="<?php echo $path; ?>assets/img/footer-tel-sp.png" alt=""></a></li>
+      <li>
+        <a target="_blank" href="https://line.me/ti/p/UEqlP-M4xI"><img
+            src="<?php echo $path; ?>assets/img/footer-line-sp.png" alt=""></a>
+      </li>
+    </ul>
   </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
 <script type="text/javascript" src="<?php echo $path; ?>assets/js/index.js"></script>
 
 </body>

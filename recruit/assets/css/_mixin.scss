@@ -1,11 +1,3 @@
-$black: #232323;
-$primaryLight: #d7e2ff;
-$primaryMain: #3d58a0;
-// $primaryDark: #2b3e71;
-// $secondaryLight: #ff6a6a;
-$secondaryMain: #ff0000;
-// $secondaryDark: #b40202;
-
 @mixin center {
   margin-left: auto;
   margin-right: auto;
@@ -31,16 +23,9 @@ $secondaryMain: #ff0000;
   flex-wrap: wrap;
 }
 
-$lg: 1700px;
-$pc: 1100px;
+$pc: 1280px;
 $tab: 768px;
 $sp: 440px;
-
-@mixin lg {
-  @media (max-width: ($lg)) {
-    @content;
-  }
-}
 
 @mixin pc {
   @media (max-width: ($pc)) {
@@ -59,3 +44,9 @@ $sp: 440px;
     @content;
   }
 }
+
+$black: #3c3c3c;
+$yellow: #e1b148;
+$blue: #76ccf3;
+$pink: #ec83a6;
+$green: #79bd28;

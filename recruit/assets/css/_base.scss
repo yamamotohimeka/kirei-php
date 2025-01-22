@@ -5,44 +5,70 @@ a {
   text-decoration: none;
   transition: all 0.2s;
   &:hover {
-    color: #888;
+    color: #cff5ff;
   }
 }
-
+html {scroll-behavior: smooth;
+overscroll-behavior: auto;}
 li {
   list-style-type: none;
 }
-
-body {
-  font-variant-ligatures: none;
-  font-family: "小塚明朝 Pr6N", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", serif;
-  overflow-x: hidden;
-  color: $black;
-  font-weight: 500;
-  background: url(../images/body-bg.jpeg) repeat;
-  background-position: center top;
-  @include tab {
-    background: url(../images/body-bg-tab.jpeg) repeat;
-    background-position: center top;
+.main-top{
+  padding-top: 114px;
+  @media (max-width: 1500px) {
+    padding-top: calc(100vw / (1500 / 100));
   }
-}
-
-main {
-  padding: 8px 0 32px;
   @include pc {
-    padding: calc(8vw / (1100 / 100)) 0 calc(32vw / (1100 / 100));
+    padding-top: calc(70vw / (1200 / 100));
+  }
+  @include tab {
+    margin-top: calc(120vw / (768 / 100));
+    padding-top: 0;
   }
 }
 
-.gothic {
-  font-family: "小塚ゴシック Pr6N", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+#chamo-window .chamo-chatlog-wrapper {
+  overscroll-behavior: auto;
 }
-
-img {
+main{
+  .container {
+    max-width: 1200px;
+    @include center;
+  }
+}
+.quotation{
+  margin-left: -14px;
+  margin-right: -14px;
+}
+.fixed {
+	position: fixed !important;
   width: 100%;
+  background: #d00000;
+	top: 0;
+  z-index: 90;
+}
+body {
+  position: relative;
+  background-position:top  center;
+  font-variant-ligatures: none;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  color: #000;
+  background-size: cover;
+  height: 100vh;
+  @include pc {
+
+  }
+  @include tab {
+    background: url(../img/main-bg-sp.jpg) no-repeat;
+    background-size: cover;
+    background-position:top  center;
+    
+  }
+}
+img {
   max-width: 100%;
 }
-
 .block {
   display: block !important;
 }
@@ -64,18 +90,40 @@ img {
     display: block !important;
   }
 }
+.pc-words {
+  @include sp {
+    display: none !important;
+  }
+}
+.sp-words {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+.recruit {
+  @include tab {
+    padding-top: calc(136vw / (768 / 100));
+  }
+}
 
 .container {
-  width: 100%;
+  
   max-width: 1100px;
   @include center;
+  @include pc {
+    max-width:calc(1100vw / (1280 / 100))
+  }
+  @include tab {
+    max-width: 96%;
+  }
 }
 
 .flex {
   @include flex;
 }
 
-.flex-row {
+.flex-low {
   display: flex;
   flex-wrap: wrap;
 }
@@ -86,4 +134,335 @@ img {
 
 .flex-around {
   @include flex-around;
+}
+
+/* ボタンで表示・非表示JSで値操作 */
+[data-display="hide"] {
+  display: none;
+}
+
+[data-display="show"] {
+  display: block;
+}
+
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.fadeUp.show-fadeUp {
+  animation: fadeUp 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn1 {
+  opacity: 0;
+}
+
+.fadeIn1.show-fadeIn1 {
+  animation: fadeIn 1.1s ease-in-out forwards;
+}
+
+.fadeIn2 {
+  opacity: 0;
+}
+
+.fadeIn2.show-fadeIn2 {
+  animation: fadeIn 1.1s 0.6s ease-in-out forwards;
+}
+
+.fadeIn3 {
+  opacity: 0;
+}
+
+.fadeIn3.show-fadeIn3 {
+  animation: fadeIn 1.1s 1.1s ease-in-out forwards;
+}
+
+.fadeIn4 {
+  opacity: 0;
+}
+
+.fadeIn4.show-fadeIn4 {
+  animation: fadeIn 1.1s 1.7s ease-in-out forwards;
+}
+
+.fadeIn5 {
+  opacity: 0;
+}
+
+.fadeIn5.show-fadeIn5 {
+  animation: fadeIn  0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bound1 {
+  opacity: 0;
+}
+
+.bound1.show-bound1 {
+  animation: bound 2s 0.6s linear forwards;
+}
+
+.bound2 {
+  opacity: 0;
+}
+
+.bound2.show-bound2 {
+  animation: bound 2s 1s linear forwards;
+}
+
+.bound3 {
+  opacity: 0;
+}
+
+.bound3.show-bound3 {
+  animation: bound 2s 1.6s linear forwards;
+}
+
+@keyframes bound {
+  0% {
+    transform: translate(0%, -48%);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0%, 0%) scale(0.95);
+  }
+  40% {
+    transform: translate(0%, -12%);
+    opacity: 1;
+  }
+  55% {
+    transform: translate(0%, 0%) scale(0.95);
+  }
+  60% {
+    transform: translate(0%, -6%);
+  }
+  70% {
+    transform: translate(0%, 0%) scale(0.95);
+  }
+  75% {
+    transform: translate(0%, -2.4%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+      /* QRコードを表示する */
+      .line_qr_knob {
+        padding: 0;
+        width: max-content;
+
+        border-bottom: 0.5px solid #000000;
+
+        color: #000000;
+        font-size: 0.65em;
+        font-family: "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+      }
+      #line_qr_fix #line_mat, #line_qr_fix {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(9, 9, 9, 0.7);
+    }
+/* LINEのQRコード（普段は非表示）============*/
+#line_qr_fix,
+#tel_num_fix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+
+  @include pc {
+    font-size: calc(40vw / (1280 / 100));
+  }
+  @include tab {
+    font-size: calc(40vw / (768 / 100));
+  }
+  @include sp {
+    font-size: calc(35vw / (440 / 100));
+  }
+
+  /* 背景を暗く */
+  #line_mat,
+  #tel_mat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(9, 9, 9, 0.7);
+  }
+
+  /* 内容部分の枠 */
+  .QR_wrap,
+  .num_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    max-width: 80vw;
+    max-height: 80vw;
+
+    > * {
+      display: block;
+    }
+
+    /* 文字部分 */
+    p,
+    a {
+      padding: 14px 0;
+
+      @include pc {
+        padding: calc(14vw / (1280 / 100)) 0;
+      }
+      @include tab {
+        padding: calc(10vw / (768 / 100)) 0;
+      }
+      @include sp {
+        padding: calc(10vw / (440 / 100)) 0;
+      }
+    }
+    a {
+      font-size: 46px;
+      font-weight: bold;
+    }
+    a:hover {
+      color: inherit;
+      opacity: 0.8;
+    }
+    p {
+      font-weight: bold;
+      font-size: 31px !important;
+    }
+
+    /* QR画像部分 */
+    img {
+      width: auto;
+    }
+  }
+}
+.section-title{
+  position: relative;
+  background: #a60000;
+  box-shadow: 2px 3px 8px #00000091;
+  height:  100px;
+  @include pc {
+    box-shadow: calc(2vw / (1280 / 100)) calc(3vw / (1280 / 100)) calc(8vw / (1280 / 100));
+    height: calc(100vw / (1280 / 100));
+  }
+  @include tab {
+    box-shadow: calc(2vw / (768 / 100)) calc(3vw / (768 / 100)) calc(8vw / (768 / 100));
+    height: calc(73vw / (768 / 100));
+  }
+  .container{
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    width: 1200px;
+    @include pc {
+      height: calc(100vw / (1280 / 100));
+      width: calc(1200vw / (1280 / 100));
+    }
+    @include tab {
+      height: calc(73vw / (768 / 100));
+      width: calc(700vw / (768 / 100));
+    }
+  }
+  &-inner{
+    top: -30px;
+    left: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include pc {
+      top: calc(-30vw / (1280 / 100));
+      left: calc(60vw / (1280 / 100));
+      gap: calc(40vw / (1280 / 100));
+    }
+    @include tab {
+      top: calc(-20vw / (768 / 100));
+      left: calc(00vw / (768 / 100));
+      gap: calc(30vw / (768 / 100));
+    }
+    img{
+      width: 150px;
+      @include pc {
+        width: calc(150vw / (1280 / 100));
+      }
+      @include tab {
+        width: calc(110vw / (768 / 100));
+      }
+    }
+    h2{
+      margin-top: 16px;
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 0.04em;
+      @include pc {
+        margin-top: calc(16vw / (1280 / 100));
+        font-size: calc(40vw / (1280 / 100));
+      }
+      @include tab {
+        margin-top: calc(2vw / (768 / 100));
+        font-size: calc(42vw / (768 / 100));
+      }
+    }
+        }
 }

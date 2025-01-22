@@ -4,9 +4,7 @@ validation();
 
 //電話・メールラジオボタン切り替え
 document.addEventListener("DOMContentLoaded", () => {
-  $("#telephone").val("00000000000");
-  $(".text01").css("display", "none");
-
+  $("#telephone").val("");
   $('[name="btn"]:radio').change(function () {
     if ($("[id=mailSelect]").prop("checked")) {
       $(".text").css("display", "none");
@@ -27,6 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $("#the-form").submit(function (event) {
     event.preventDefault();
+
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute("6LdgXGsgAAAAAN2lvcI7yioZfdpj-1yozAcwZ_v6", {
+          action: "submit",
+        })
+        .then(function (token) {
+          // Add your logic to submit to your backend server here.
+          var recaptchaToken = document.getElementById("recaptchaToken");
+          recaptchaToken.value = token;
+          $("the-form").submit();
+        });
+    });
 
     //フォームの入力値を変数に格納する
     const form_data = $("form").serialize();
@@ -63,9 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .fail(function (jqXHR, textStatus, errorThrown) {
           //通信失敗時の処理
           $("#form-load").hide();
-          console.log("XMLHttpRequest : " + XMLHttpRequest.status);
-          console.log("textStatus     : " + textStatus);
-          console.log("errorThrown    : " + errorThrown.message);
           $("#result").text("送信できませんでした"); //失敗メッセージをHTMLに入れて表示する
         });
     }

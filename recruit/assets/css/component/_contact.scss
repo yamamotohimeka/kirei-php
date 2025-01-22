@@ -1,0 +1,401 @@
+.contact{
+  .form-box-content-location{
+    span{
+      margin-left: 16px;
+      @include pc {
+        margin-left: calc(16vw / (1280 / 100));
+      }
+      @include tab {
+        margin-left: calc(16vw / (768 / 100));
+      }
+    }
+    .error{
+      font-size: 10px;
+      @include pc {
+        font-size: calc(10vw / (1280 / 100));
+      }
+    }
+  }
+  &__sns{
+    text-align: center;
+    .line-qr{
+      margin:120px auto 10px;
+      width: 900px;
+      @include pc {
+        margin: calc(120vw / (1280 / 100)) auto calc(10vw / (1280 / 100));
+        width: calc(900vw / (1280 / 100));
+      }
+    }
+    h3{
+      font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ; 
+      font-weight: 400;
+      font-size: 44px;
+      text-align: center;
+      color: #000047;
+      @include pc {
+        font-size: calc(44vw / (1280 / 100));
+      }
+    }
+    &-tel{
+        margin: 30px auto 100px;
+        width: 640px;
+        @include pc {
+          margin: calc(30vw / (1280 / 100)) auto calc(100vw / (1280 / 100));
+          width: calc(640vw / (1280 / 100));
+        }
+    }
+    &-sp{
+      padding: calc(110vw / (768 / 100)) 0 calc(90vw / (768 / 100));
+      width: calc(680vw / (768 / 100));
+      margin: 0 auto;
+      text-align: center;
+      &-logo{
+        width: calc(620vw / (768 / 100));
+      }
+      &-link{
+        display: block;
+        width: calc(570vw / (768 / 100));
+        margin: 0 auto calc(70vw / (768 / 100));
+      }
+      &-tel{
+        width: calc(640vw / (768 / 100));
+        display: block;
+        margin: 0 auto calc(20vw / (768 / 100));
+      }
+    }
+  }
+  h4{
+    margin-bottom: 30px;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ; 
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    color: #4d8dad;
+    @include pc {
+      margin-bottom: calc(30vw / (1280 / 100));
+      font-size: calc(35vw / (1280 / 100));
+    }
+    @include tab {
+      font-size: calc(50vw / (768 / 100));
+    }
+  }
+  &__bg{
+    .form-box{
+      background: #4d8dad;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      border-top: #b1b1b1 1px solid;
+      border-left: 1px solid #b1b1b1;
+      border-right: 1px solid #b1b1b1;
+      @include tab {
+        flex-direction: column;
+        align-items: flex-start;
+        border-left: 0;
+        border-right: 0;
+      }
+      &-content{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        @include pc {
+          gap: calc(14vw / (1280 / 100));
+        }
+        @include tab {
+          margin-bottom: calc(20vw / (768 / 100));
+        }
+        &-location{
+          flex-direction: column;
+          align-items: flex-start;
+          p{
+            padding-left: 50px;
+            @include pc {
+              padding-left: calc(50vw / (1280 / 100));
+            }
+          }input{
+            width: 20px !important;
+            color: #000047 !important;
+            @include pc {
+              width: calc(20vw / (1280 / 100)) !important;
+            }
+            @include tab {
+              width: calc(23vw / (768 / 100)) !important;
+            }
+          }
+        }
+      }
+      span{
+        background: #c90000;
+        border-radius: 3px;
+        font-size: 22px;
+        padding: 5px 10px 3px;
+        font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ; 
+        @include pc {
+          border-radius: calc(3vw / (1280 / 100));
+          font-size: calc(22vw / (1280 / 100));
+          padding: calc(5vw / (1280 / 100)) calc(10vw / (1280 / 100)) calc(3vw / (1280 / 100));
+        }
+        @include tab {
+          border-radius: calc(4vw / (768 / 100));
+          font-size: calc(26vw / (768 / 100));
+          padding: calc(6vw / (768 / 100)) calc(10vw / (768 / 100)) calc(4vw / (768 / 100));
+        }
+      }
+      input{
+        width: 400px;
+        margin-left: 50px;
+        background: #fff;
+        color: #000 !important;
+        padding-left: 10px;
+        @include pc {
+          width: calc(400vw / (1280 / 100));
+          margin-left: calc(50vw / (1280 / 100));
+          padding-left: calc(10vw / (1280 / 100));
+        }
+        @include tab {
+          margin-left: calc(52vw / (768 / 100));
+          width: calc(540vw / (768 / 100));
+          height: calc(54vw / (768 / 100));
+          border-radius: calc(10vw / (768 / 100));
+          padding: calc(8vw / (768 / 100)) calc(4vw / (768 / 100)) calc(8vw / (768 / 100)) calc(12vw / (768 / 100));
+          font-size: calc(22vw / (768 / 100));
+        }
+      }
+      &:last-of-type{
+        border-bottom: 1px solid #b1b1b1;
+      }
+      &-ttl{
+        width: 300px;
+        height: 100px;
+        border-right: 1px solid #b1b1b1;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        @include pc {
+          width: calc(300vw / (1280 / 100));
+          height: calc(100vw / (1280 / 100));
+          padding-left: calc(30vw / (1280 / 100));
+        }
+        @include tab {
+          margin-top: calc(10vw / (768 / 100));
+          margin-left: calc(40vw / (768 / 100));
+          font-size: calc(26vw / (768 / 100));
+          width: calc(500vw / (768 / 100));
+          border-right: 0;
+        }
+      }
+      &-radio{
+        display: flex;
+        align-items: center;
+        @include tab {
+          flex-wrap: wrap;
+          margin-left: calc(13vw / (768 / 100));
+        }
+        .form-box-radio-inner{
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          @include pc {
+            gap: calc(6vw / (1280 / 100));
+          }
+          @include tab {
+            width: calc(230vw / (768 / 100));
+            gap: calc(8vw / (768 / 100));
+            font-size: calc(24vw / (768 / 100));
+          }
+          label{
+            padding-bottom: 2px;
+            p{
+              padding-left: 0;
+            }
+            @include pc {
+              padding-bottom: calc(2vw / (1280 / 100));
+            }
+          }
+        }
+      }
+    }
+    .textbox{
+      .form-box-ttl{
+        height: 260px;
+        @include pc {
+          height: calc(260vw / (1280 / 100));
+        }
+        @include tab {
+          height: calc(50vw / (768 / 100));
+        }
+      }
+      textarea{
+        margin-left: 50px;
+        background: #ffffff;
+        resize: none;
+        width:500px;
+        height:200px;
+        color: #000;
+        padding: 5px 7px;
+        @include pc {
+          margin-left: calc(50vw / (1280 / 100));
+          width: calc(500vw / (1280 / 100));
+          height: calc(200vw / (1280 / 100));
+          padding: calc(5vw / (1280 / 100)) calc(7vw / (1280 / 100));
+        }
+        @include tab {
+          margin-left: calc(58vw / (768 / 100));
+          margin-bottom: calc(14vw / (768 / 100));
+          width: calc(540vw / (768 / 100));
+          border-radius: calc(10vw / (768 / 100));
+          height: calc(260vw / (768 / 100));
+          padding: calc(8vw / (768 / 100)) calc(10vw / (768 / 100));
+          font-size: calc(22vw / (768 / 100));
+        }
+      }
+    }
+  }
+  .form-submit{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    @include pc {
+      padding-bottom: calc(20vw / (1280 / 100));
+      margin-top: calc(40vw / (1280 / 100));
+    }
+    @include tab {
+      margin-top: calc(40vw / (768 / 100));
+      padding-bottom: calc(20vw / (768 / 100));
+    }
+    input{
+
+      border:1px solid  #4d8dad;
+      color: #4d8dad;
+      width: 500px;
+      height: 57px;
+      padding: 18px 14px 20px;
+      font-size: 24px;
+      font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' !important ; 
+      @include pc {
+        width: calc(500vw / (1280 / 100));
+        height: calc(57vw / (1280 / 100));
+        padding: calc(18vw / (1280 / 100)) calc(14vw / (1280 / 100)) calc(20vw / (1280 / 100));
+        font-size: calc(24vw / (1280 / 100));
+      }
+      @include tab {
+        width: calc(520vw / (768 / 100));
+        height: calc(67vw / (768 / 100));
+        padding: calc(22vw / (768 / 100)) calc(14vw / (768 / 100)) calc(20vw / (768 / 100));
+        font-size: calc(28vw / (768 / 100));
+      }
+    }
+  }
+  /********************************************
+* Now Loading
+********************************************/
+#form-load {
+  display: none;
+}
+.loader {
+  margin: 0 auto;
+  border: 12px solid #fafafa;
+  border-radius: 50%;
+  border-top: 12px solid #3498db;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load1 {
+  animation: sk-scaleout 1s infinite ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 201;
+  text-align: center;
+  background-color: #b1b1b1;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 800px;
+  p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+  }
+}
+#result{
+  text-align: center;
+  margin: 0px auto;
+  @include pc {
+    margin:calc(80vw / (1200 / 100)) auto;
+  }
+
+  h4{
+    margin-bottom: 45px;
+    font-size:36px;
+    @include pc {
+      margin-bottom:calc(40vw / (1200 / 100));
+      font-size:calc(47vw / (1200 / 100));
+    }
+    @include tab {
+      margin-bottom:calc(36vw / (768 / 100));
+      font-size:calc(38vw / (768 / 100));
+      letter-spacing: 0.08em;
+      font-weight: bold;
+    }
+  }
+  p{
+    padding-bottom: 50px;
+    font-size: 20px;
+
+    @include pc {
+      font-size:calc(31vw / (1200 / 100));
+    }
+    @include tab {
+      font-size:calc(30vw / (768 / 100));
+      line-height: 1.4;
+      padding-bottom:calc(50vw / (768 / 100));
+    }
+  }
+}
+.space{
+  height: 30px;
+    @include pc {
+    height:calc(30vw / (1200 / 100));
+  }
+  @include tab {
+    height:calc(10vw / (768 / 100));
+  }
+}
+
+}
+.form-confirm{
+  @include tab {
+    padding:calc(30vw / (768 / 100));
+  }
+}
+
+
+input{
+  height: 38px;
+  line-height: 1;
+  @include pc {
+    height:calc(38vw / (1200 / 100));
+  }
+  @include tab {
+    height:calc(38vw / (768 / 100));
+  }
+  @include sp {
+    font-size:calc(20vw / (440 / 100));
+    height:calc(28vw / (440 / 100));
+  }
+}
+
+
+

@@ -1,0 +1,97 @@
+.job{
+  background: url(../img/job-bg.png);
+  min-height: 890px;
+  background-size: cover;
+  background-position: top center;
+  color: #7f7f80;
+  @include pc {
+    min-height: calc(890vw / (1280 / 100));
+  }
+  @include tab {
+    background: #fff;
+  }
+  .container{
+    padding-bottom: 100px;
+    @include pc {
+      padding-bottom: calc(100vw / (1280 / 100));
+    }
+  }
+  &__step{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    @include pc {
+      gap: calc(30vw / (1280 / 100));
+      margin-bottom: calc(60vw / (1280 / 100));
+      margin-left: calc(50vw / (1280 / 100));
+    }
+    @include tab {
+      gap: calc(20vw / (768 / 100));
+      margin-bottom: calc(60vw / (768 / 100));
+      margin-left: calc(46vw / (768 / 100));
+    }
+    &:first-of-type{
+      margin-top:130px;
+      @include pc {
+        margin-top: calc(130vw / (1280 / 100));
+      }
+      @include tab {
+        margin-top: calc(110vw / (768 / 100));
+      }
+    }
+    &-line{
+      background: #7f7f80;
+      height: 230px;
+      width: 4px;
+      @include pc {
+        height: calc(230vw / (1280 / 100));
+        width: calc(4vw / (1280 / 100));
+      }
+      @include tab {
+        height: calc(260vw / (768 / 100));
+        width: calc(3vw / (768 / 100));
+      }
+    }
+    &-content{
+      &-ttl{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 24px;
+        font-size: 30px;
+        font-weight: 600;
+        @include pc {
+          font-size: calc(30vw / (768 / 100));
+          gap: calc(30vw / (1280 / 100));
+          margin-bottom: calc(24vw / (1280 / 100));
+        }
+        @include tab {
+          font-size: calc(34vw / (768 / 100));
+          gap: calc(30vw / (768 / 100));
+          margin-bottom: calc(30vw / (768 / 100));
+        }
+        img{
+          width: 110px;
+          @include pc {
+            width: calc(110vw / (1280 / 100));
+          }
+          @include tab {
+            width: calc(110vw / (768 / 100));
+          }
+        }
+      }
+      &-txt{
+        font-size: 24px;
+        line-height: 1.6;
+        @include pc {
+          font-size: calc(24vw / (1280 / 100));
+        }
+        @include tab {
+          font-size: calc(27vw / (768 / 100));
+        }
+      }
+    }
+  }
+}

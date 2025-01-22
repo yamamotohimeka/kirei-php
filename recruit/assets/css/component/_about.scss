@@ -1,0 +1,115 @@
+.about{
+  padding-bottom: 100px;
+  background: #fff;
+  @include pc {
+    padding-bottom: calc(100vw / (1280 / 100));
+  }
+  &__top{
+    padding-top: 50px;
+    text-align: center;
+    @include pc {
+      padding-top: calc(50vw / (1280 / 100));
+    }
+    @include tab {
+      display: none;
+    }
+    img{
+      width: 1060px;
+      @include pc {
+        width: calc(1060vw / (1280 / 100));
+      }
+    }
+    &-sp{
+      display: none;
+      @include tab {
+        display: block;
+        width: calc(620vw / (768 / 100));
+        padding-top: calc(90vw / (768 / 100));
+        margin: calc(20vw / (768 / 100)) auto;
+      }
+    }
+  }
+  &__triple{
+    margin: 50px auto 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    @include pc {
+      margin: calc(50vw / (1280 / 100)) auto calc(70vw / (1280 / 100));
+      gap: calc(30vw / (1280 / 100));
+    } 
+    @include tab {
+      display: none;
+    }
+    img{
+      width: 380px;
+      @include pc {
+        width: calc(380vw / (1280 / 100));
+      }
+    }
+    &-sp{
+      display: none;
+      @include tab {
+        display: block;
+        width: calc(680vw / (768 / 100));
+        padding-top: calc(90vw / (768 / 100));
+        margin: calc(20vw / (768 / 100)) auto;
+      }
+    }
+  }
+  &__merit{
+    margin-bottom: 60px;
+    @include pc {
+      margin-bottom: calc(60vw / (1280 / 100));
+    }
+    h3{
+      margin-left: 24px;
+      margin-bottom: 10px;
+      color: #ff5d90;
+      font-size: 60px;
+      @include pc {
+        margin-left: calc(50vw / (1280 / 100));
+        margin-bottom: calc(10vw / (1280 / 100));
+        font-size: calc(60vw / (1280 / 100));
+      }
+      @include tab {
+        margin-left: calc(46vw / (768 / 100));
+        font-size: calc(46vw / (768 / 100));
+      }
+    }
+    &-flex{
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      @include pc {
+        margin-left: calc(50vw / (1280 / 100));
+        gap: calc(30vw / (1280 / 100));
+      }
+      @include tab {
+        margin-left: calc(42vw / (768 / 100));
+      }
+      img{
+        width: 500px;
+        @include pc {
+          width: calc(500vw / (1280 / 100));
+        }
+        @include tab {
+          width: calc(360vw / (768 / 100));
+        }
+      }
+      p{
+        color: #000033;
+        font-size: 28px;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        @include pc {
+          font-size: calc(28vw / (1280 / 100));
+        }
+        @include tab {
+          font-size: calc(24vw / (768 / 100));
+        }
+      }
+    }
+  }
+}

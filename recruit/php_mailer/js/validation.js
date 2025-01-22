@@ -101,7 +101,7 @@ export const validation = () => {
           }
         }
         if (checkedCount === 0) {
-          createError(elem, "少なくとも1つを選択してください");
+          createError(elem, "選択してください");
         }
       });
     });
