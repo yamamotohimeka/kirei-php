@@ -91,11 +91,23 @@
         }
       }
     }
+    .first-step {
+      p {
+        padding: 44px 20px 20px 100px;
+        @include pc {
+          padding: calc(44vw / (1280 / 100)) calc(20vw / (1280 / 100))
+            calc(20vw / (1280 / 100)) calc(100vw / (1280 / 100));
+        }
+        @include tab {
+          padding: calc(44vw / (768 / 100)) calc(20vw / (768 / 100))
+            calc(20vw / (768 / 100)) calc(70vw / (768 / 100));
+        }
+      }
+    }
     .second-step {
       background: url(../img/flow02.png) no-repeat;
       background-size: contain;
       background-position: top center;
-      height: 520px;
     }
     .last-step {
       background: url(../img/flow03.png) no-repeat;
