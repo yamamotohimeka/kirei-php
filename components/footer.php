@@ -1,5 +1,106 @@
 <footer class="footer">
   <div class="footer__main">
+    <?php if ($templete == 'top') :?>
+    <nav class="footer__banner container">
+      <ul>
+        <li>
+          <a href="https://work-mikke.jp/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/mikke.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="https://happyhellowork.com/rank.php?s=4" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/happy.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bwork.net/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/b_1.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://q-pri.com/shop_list/area/102/102" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/q_1.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://q-pri.com/shop_list/area/102/102" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/q_2.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://q-pri.com/shop_list/area/102/102" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/q_3.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.15navi.com/osaka/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/15_1.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.15navi.com/osaka/ma310/aa202/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/15_2.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://qzin.jp" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/v_1.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://qzin.jp" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/v_2.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://qzin.jp" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/v_3.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://qzin.jp" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/v_4.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.46job.jp/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/yj.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.kosyunyu.com/kansai/kita_umeda_togano/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/kc.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fucolle.com/kansai/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/f.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.yorutomo.net" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/yt.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="https://fujoho.jp/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/kuti.gif">
+          </a>
+        </li>
+        <li>
+          <a href="https://fuzoku.jp/kirei3/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/fj.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="https://mens-qzin.jp/" target="_blank" rel="noopener">
+            <img src="<?php echo $path; ?>assets/images/mv.gif">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <?php endif; ?>
 
     <div class="container">
       <img class="footer-logo" src="<?php echo $path; ?>assets/img/header-logo.png" alt="">

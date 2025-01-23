@@ -5,6 +5,33 @@
     margin: 0 auto;
     padding: calc(36vw / (768 / 100)) 0;
   }
+  &__banner {
+    margin-top: 16px;
+    @include pc {
+      margin-top: calc(16vw / (1100 / 100));
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 8px 0;
+      @include pc {
+        gap: calc(8vw / (1100 / 100)) 0;
+      }
+      li {
+        img {
+          height: 40px;
+          object-fit: cover;
+          @include pc {
+            height: calc(40vw / (1100 / 100));
+          }
+          @include tab {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
   &__main{
     .container{
       position: relative;
