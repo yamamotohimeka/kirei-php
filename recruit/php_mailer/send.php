@@ -16,7 +16,7 @@ if ($_SESSION['key'] === $_POST['token']) {
   $email = $_POST['email'];
   $line = $_POST['line'];
   $age = $_POST['age'];
-  $work = $_POST['work'];
+  $work = implode(',', $_POST['work']);
   $interviewDate = $_POST['interviewDate'];
   $text = $_POST['text'];
 
