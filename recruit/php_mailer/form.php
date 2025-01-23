@@ -171,5 +171,5 @@
 <!-- 結果メッセージ -->
 <div id="result"></div><!-- /#result -->
 
-<script src="https://www.google.com/recaptcha/api.js?render=6Lek-AkpAAAAAKCvllmEU5CD3BZo6MsJz5Q7Px0W"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdR2rgiAAAAAI4XI0J5eaPSyy62ltLteRbKOu33"></script>
 <script type="module" src="php_mailer/js/form.js"></script>
