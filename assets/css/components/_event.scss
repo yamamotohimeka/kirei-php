@@ -1,0 +1,111 @@
+.event{
+  background: #f2f7ff;
+  .container{
+    background: #fff;
+    text-align: center;
+  }
+  &__pink,
+  &__blue,
+  &__orange{
+    margin-top: 40px;
+    @include pc {
+      margin-top:calc(40vw / (1280 / 100));
+    }
+    @include tab {
+      margin-top:calc(60vw / (768 / 100))
+    }
+    img{
+      margin: 0 auto;
+      width: 1000px;
+      @include pc {
+        width:calc(1000vw / (1280 / 100));
+      }
+      @include tab {
+        width:calc(660vw / (768 / 100));
+        margin: 0 auto;
+      }
+    }
+    h3{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      font-size: 32px;
+      font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','MS UI Gothic','ヒラギノ角ゴシック','Hiragino Sans', 
+      sans-serif;
+      font-weight: bold;
+      @include pc {
+        margin-top:calc(30vw / (1280 / 100));
+        margin-bottom:calc(40vw / (1280 / 100));
+        font-size:calc(32vw / (1280 / 100));
+      }
+      @include tab {
+        margin-top:calc(30vw / (768 / 100));
+        margin-bottom:calc(30vw / (768 / 100));
+        font-size:calc(30vw / (768 / 100));
+      }
+      span{
+        font-size: 42px;
+        @include pc {
+          font-size:calc(42vw / (1280 / 100));
+        }
+        @include tab {
+          font-size:calc(40vw / (768 / 100));
+        }
+      }
+    }
+    h4{
+      font-size: 34px;
+      font-family: 'nicoca';
+      transform: scaleY(1.4);
+      line-height: 1.4;
+      letter-spacing: 0.07em;
+      @include pc {
+        font-size:calc(34vw / (1280 / 100));
+      }
+      @include tab {
+        font-size:calc(34vw / (768 / 100));
+      }
+    }
+    p{
+      margin-top: 30px;
+      padding-bottom: 70px;
+      font-size: 22px;
+      line-height: 1.7;
+      letter-spacing: 0.06em;
+      font-family: 'riipop';
+      @include pc {
+        margin-top:calc(30vw / (1280 / 100));
+        padding-bottom:calc(70vw / (1280 / 100));
+        font-size:calc(22vw / (1280 / 100));
+      }
+      @include tab {
+        margin-top:calc(28vw / (768 / 100));
+        padding-bottom:calc(40vw / (768 / 100));
+        font-size:calc(24vw / (768 / 100));
+        line-height: 1.8;
+      }
+    }
+  }
+  &__pink{
+    h3{
+      color: #fb5db6;
+    }
+  }
+  &__blue{
+    h3{
+      color: #2996cd;
+    }
+  }
+  &__orange{
+    h3{
+      color: #ff882a;
+    }
+    p{
+      @include tab {
+        padding-bottom:calc(120vw / (768 / 100));
+      }
+    }
+  }
+}

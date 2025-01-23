@@ -1,0 +1,116 @@
+.schedule{
+  background: #000;
+  padding-top: 140px;
+  @include pc {
+    padding-top: calc(140vw / (1280 / 100));
+  }
+  .section-title{
+    margin-bottom: 70px;
+    @include pc {
+      margin-bottom: calc(70vw / (1280 / 100));
+    }
+  }
+  .cast__box__list {
+    gap: 70px 24px;
+    @include pc {
+      gap: calc(70vw / (1280 / 100)) calc(24vw / (1280 / 100));
+    }
+    @include tab {
+      gap: calc(60vw / (768 / 100)) calc(38vw / (768 / 100));
+    }
+  }
+  &__btn {
+    margin: 50px auto 70px auto;
+    text-align: center;
+    font-size: 18px;
+    @include pc {
+      margin:calc(50vw / (1280 / 100)) auto calc(70vw / (1280 / 100)) auto;
+      font-size:calc(18vw / (1280 / 100));
+    }
+    &__list {
+      position: relative;
+      @include flex;
+      justify-content: center !important;
+      color: #fff;
+
+      gap: 10px;
+      @include pc {
+        gap: calc(10vw / (1280 / 100));
+      }
+      .dateactive {
+        letter-spacing: -0.03em;
+        background: #550000;
+      }
+      @include pc {
+        gap:calc(14vw / (1280 / 100));
+      }
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        width: 160px;
+        border: 3px solid #c90009;
+        text-align: center;
+        font-size: 28px;
+        @include pc {
+          padding:calc(4vw / (1280 / 100));
+          width:calc(160vw / (1280 / 100));
+          font-size:calc(28vw / (1280 / 100));
+          border: calc(3vw / (1280 / 100)) solid #c90009;
+        }
+        &_date{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          letter-spacing: -0.03em;
+          margin-right: 6px;
+          padding-top: 2px;
+          gap: 3px;
+          @include pc {
+            margin-right:calc(6vw / (1280 / 100));
+            gap: calc(3vw / (1280 / 100));
+          }
+          @include tab {
+            flex-wrap: wrap;
+          }
+        }
+        &_month{
+          padding-top: 2px;
+          font-size: 18px;
+          @include pc {
+            padding-top: calc(2vw / (1280 / 100));
+            font-size: calc(18vw / (1280 / 100));
+          }
+          @include tab {
+            width: calc(80vw / (768 / 100));
+            font-size: calc(22vw / (768 / 100));
+          }
+        }
+        &_day{
+          font-size: 30px;
+          @include pc {
+            font-size: calc(30vw / (1280 / 100));
+          }
+          @include tab {
+            font-size: calc(30vw / (768 / 100));
+          }
+        }
+        &_week{
+          @include tab {
+            font-size: calc(30vw / (768 / 100));
+          }
+        }
+      }
+    }
+  }
+  .date{
+    margin: 36px auto 6px;
+    color: #fff;
+    font-size: 28px;
+    @include tab {
+      margin: calc(44vw / (768 / 100)) auto calc(80vw / (768 / 100));
+      font-size: calc(32vw / (768 / 100));
+    }
+  }
+}

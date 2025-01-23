@@ -1,0 +1,95 @@
+.access{
+  background: #000;
+  padding-top: 140px;
+  color: #fff;
+  @include pc {
+    padding-top: calc(140vw / (1280 / 100));
+  }
+  &__store{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0 100px 0;
+    gap: 50px 90px;
+    @include pc {
+      padding:calc(50vw / (1280 / 100)) 0 calc(100vw / (1280 / 100)) 0;
+      gap:calc(50vw / (1280 / 100))calc(90vw / (1280 / 100));
+    }
+    @include tab {
+      gap: calc(80vw / (768 / 100));
+    }
+    &-map{
+      &-name{
+        display: flex;
+        align-items: center;
+        padding-bottom: 18px;
+        gap: 10px;
+        @include pc {
+          padding-bottom:calc(18vw / (1280 / 100));
+          gap:calc(10vw / (1280 / 100));
+        }
+        @include tab {
+          padding-bottom:calc(14vw / (768 / 100));
+        }
+        h3{
+          padding: 2px 0px;
+          color: #fff;
+          letter-spacing: 0.09em;
+          font-size: 24px;
+          @include pc {
+            padding:calc(2vw / (1280 / 100)) calc(22vw / (1280 / 100));
+            border-radius:calc(70vw / (1280 / 100));
+            font-size:calc(24vw / (1280 / 100));
+          }
+          @include tab {
+            padding:calc(4vw / (768 / 100))calc(14vw / (768 / 100));
+            font-size:calc(26vw / (768 / 100));
+          }
+        }
+        h4{
+          color: #eb5faf;
+          font-size: 20px;
+          letter-spacing: 0.04em;
+          @include pc {
+            font-size:calc(20vw / (1280 / 100));
+          }
+          @include tab {
+            font-size:calc(26vw / (768 / 100));
+          }
+        }
+      }
+      .map-img{
+        width: 535px;
+        height: 360px;
+        @include pc {
+          width:calc(535vw / (1280 / 100));
+          height:calc(360vw / (1280 / 100));
+        }
+        @include tab {
+          width: calc(660vw / (768 / 100));
+          height:calc(450vw / (768 / 100));
+        }
+      }
+      &-txt{
+        margin-top: 20px;
+        line-height: 1.6;
+        @include pc {
+          margin-top: calc(20vw / (1280 / 100));
+          font-size: calc(16vw / (1280 / 100));
+        }
+        @include tab {
+          font-size: calc(20vw / (768 / 100));
+        }
+        p{
+          margin-bottom: 24px;
+          @include pc {
+            margin-bottom: calc(24vw / (1280 / 100));
+          }
+          @include tab {
+            margin-bottom: calc(22vw / (768 / 100));
+          }
+        }
+      }
+    }
+  }
+}

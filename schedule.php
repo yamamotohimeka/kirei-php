@@ -1,35 +1,39 @@
-<?php 
-  require(dirname(__FILE__)."/hooks/girls.php");
-  $title = 'スケジュール';
-  $templete = 'schedule';
-  $path = './';
-
-  include $path .'components/header.php';
+<?php
+$path = './';
+$title = 'ホテルヘルスKIREI';
+$templete = 'schedule';
+include $path . 'components/header.php';
 ?>
 <main class="schedule">
   <div class="container">
-    <h2 class="section-title">
-      <img src="<?php echo $path; ?>assets/images/schedule-head.jpeg" alt="TODAY GIRL本日出勤の女の子">
-    </h2>
-    <nav class="schedule__nav">
-      <ul>
-        <?php
-          foreach($girls as $id => $girl):
-          if($girl['time'] !== ""):
-        ?>
-        <li>
-          <img src="<?php echo $path; ?>assets/images/girl<?php echo $girl['img'];?>.jpeg"
-            alt="KIREI(キレイ)の<?php echo $girl['name'];?>の画像">
-          <p><?php echo $girl['time'];?></p>
-          <h3><?php echo $girl['name'];?>(<?php echo $girl['age'];?>)</h3>
-          <p><?php echo $girl['size'];?></p>
-        </li>
+    <div class="section-title">
+      <h2>本日の出勤</h2>
+    </div>
+    <div class="schedule__btn">
+      <ul class="schedule__btn__list">
         <?php 
-          endif;
-          endforeach;
-        ?>
+        $date = "<li class='schedule__btn__list-link'>
+        <div class='schedule__btn__list-link_date'>
+          <div class='schedule__btn__list-link_month'></div>
+          <div class='schedule__btn__list-link_day'></div>
+          <div class='schedule__btn__list-link_week'></div>
+          </div>
+      </li>";
+            echo str_repeat($date, 7);
+          ?>
       </ul>
-    </nav>
+      <h3 class="date"><?php echo date('m/d');  ?>
+        (
+        <?php $week = array( '日', '月', '火', '水', '木', '金', '土' );
+        echo $week[date('w')];
+        ?>
+        )の出勤情報
+      </h3>
+    </div>
+    <ul class="cast__box__list grid">
+      <?php include $path . 'components/girls_card.php';?>
+    </ul>
+
   </div>
 </main>
-<?php  include $path .'components/footer.php';?>
+<?php include $path . 'components/footer.php';?>

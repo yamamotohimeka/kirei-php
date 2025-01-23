@@ -1,0 +1,152 @@
+.concept{
+  &__top{
+    margin-top: 64px;
+    padding-bottom: 54px;
+    background: #f5ff86;
+    @include pc {
+      margin-top:calc(64vw / (1280 / 100));
+      padding-bottom:calc(54vw / (1280 / 100));
+    }
+    p{
+      margin-top: 26px;
+      font-family: "riipop";
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      line-height: 1.7;
+      @include pc {
+        margin-top:calc(26vw / (1280 / 100));
+        font-size:calc(28vw / (1280 / 100));
+      }
+      @include tab {
+        margin: calc(20vw / (768 / 100)) auto;
+        padding-left: calc(16vw / (768 / 100));
+        font-size:calc(26vw / (768 / 100));
+      }
+    }
+  }
+
+  &__main{
+    text-align: center;
+    h2{
+      padding-top: 30px;
+      margin-bottom: 38px;
+      font-size: 48px;
+      color: #d88df0;
+      letter-spacing: 0.08em;
+      transform: scaleY(1.4);
+      font-family: "nicoca";
+      @include pc {
+        padding-top:calc(30vw / (1280 / 100));
+        margin-bottom:calc(38vw / (1280 / 100));
+        font-size:calc(48vw / (1280 / 100));
+      }
+      @include tab {
+        padding-top:calc(48vw / (768 / 100));
+        margin-bottom:calc(42vw / (768 / 100));
+        font-size:calc(50vw / (768 / 100));
+      }
+    }
+    &-box{
+      margin-bottom: 90px;
+      padding: 32px 40px;
+      border: 1px solid #d1d1d1;
+      background: #ededed;
+      border-radius: 4px;
+      text-align: left;
+      font-family: "riipop";
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      line-height: 1.8;
+      @include pc {
+        margin-bottom:calc(90vw / (1280 / 100));
+        padding:calc(32vw / (1280 / 100))calc(40vw / (1280 / 100));
+        border-radius:calc(4vw / (1280 / 100));
+        font-size:calc(20vw / (1280 / 100));
+      }
+      @include tab {
+        margin-bottom:calc(60vw / (768 / 100));
+        padding:calc(22vw / (768 / 100)) calc(18vw / (768 / 100));
+        border-radius:calc(4vw / (768 / 100));
+        letter-spacing: 0.03em;
+        font-size:calc(26vw / (768 / 100));
+      }
+    }
+  }
+  .caution{
+    text-align: center;
+    h3{
+      padding: 12px;
+      background: #eb5faf;
+      font-size: 24px;
+      font-family: "lightnovel";
+      letter-spacing: 0.06em;
+      color: #fff;
+      @include pc {
+        padding:calc(12vw / (1280 / 100));
+        font-size:calc(24vw / (1280 / 100));
+      }
+      @include tab {
+        padding:calc(12vw / (768 / 100));
+        font-size:calc(38vw / (768 / 100));
+      }
+    }
+    ul{
+      margin: 20px auto 80px;
+      text-align: left;
+      @include pc {
+        margin:calc(20vw / (1280 / 100)) auto calc(80vw / (1280 / 100));
+      }
+      @include tab {
+        margin:calc(30vw / (768 / 100)) auto calc(60vw / (768 / 100)) calc(24vw / (768 / 100));
+      }
+      li{
+        position: relative;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-size: 38px;
+        line-height: 1;
+        @include pc {
+          margin-left:calc(30vw / (1280 / 100));
+          margin-bottom:calc(20vw / (1280 / 100));
+          font-size:calc(38vw / (1280 / 100));
+        }
+        @include tab {
+          margin-bottom:calc(32vw / (768 / 100));
+          font-size:calc(40vw / (768 / 100));
+        }
+        span{
+
+          line-height: 1.5;
+          margin-left: -6px;
+          font-size: 22px;
+          @include pc {
+            margin-left:calc(-6vw / (1280 / 100));
+            font-size:calc(22vw / (1280 / 100));
+          }
+          @include tab {
+            margin-left:calc(-6vw / (768 / 100));
+            font-size:calc(21vw / (768 / 100));
+          }
+
+        }
+        &::before{
+          content:"•";
+          position: absolute;
+          top: -14px;
+          left: -36px;
+          font-size: 60px;
+          @include pc {
+            top:calc(-14vw / (1280 / 100));
+            left:calc(-36vw / (1280 / 100));
+            font-size:calc(60vw / (1280 / 100));
+          }
+          @include tab {
+            top:calc(-10vw / (768 / 100));
+            left:calc(-36vw / (768 / 100));
+            font-size:calc(54vw / (768 / 100));
+          }
+        }
+      }
+    }
+  }
+}
