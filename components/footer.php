@@ -102,7 +102,7 @@
     </nav>
     <?php endif; ?>
 
-    <div class="container">
+    <div class="container pc">
       <img class="footer-logo" src="<?php echo $path; ?>assets/img/header-logo.png" alt="">
       <nav class="footer__main__nav pc">
         <ul class="footer__main__nav__list">

@@ -42,9 +42,6 @@
       @include pc {
         padding: calc(10vw / (1280 / 100)) 0;
       }
-      @include tab {
-        display: none;
-      }
     }
     .footer-logo{
       position: absolute;
