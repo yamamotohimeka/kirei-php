@@ -1,6 +1,6 @@
 <?php
 $path = './';
-$url = 'https://kirei-php.tribe-webtest.xyz/';
+$url = 'https://kirei-osaka.com/';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
