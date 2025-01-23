@@ -16,7 +16,7 @@
     </div>
     <div class="contact__sns-sp tab">
       <img class="contact__sns-sp-logo" src="<?php echo $path; ?>assets/img/contact-sp01.png" alt="">
-      <a class="contact__sns-sp-link" href=""><img src="<?php echo $path; ?>assets/img/contact-sp02.png" alt=""></a>
+      <a class="contact__sns-sp-link" href="https://line.me/R/ti/p/ugm3_3-hN3"><img src="<?php echo $path; ?>assets/img/contact-sp02.png" alt=""></a>
       <a class="contact__sns-sp-tel" href="tel:0120-930-538"><img src="<?php echo $path; ?>assets/img/contact-sp03.png"
           alt=""></a>
     </div>
