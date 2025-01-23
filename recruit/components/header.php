@@ -1,6 +1,6 @@
 <?php
 $path = './';
-$url = '';
+$url = 'https://kirei-php.tribe-webtest.xyz/recruit/';
 
   session_start();
   header('X-Frame-Options: DENY');
