@@ -34,36 +34,6 @@
           </a>
         </li>
         <li>
-          <a href="https://www.15navi.com/osaka/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/15_1.png">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.15navi.com/osaka/ma310/aa202/" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/15_2.png">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_1.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_2.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_3.gif">
-          </a>
-        </li>
-        <li>
-          <a href="https://qzin.jp" target="_blank" rel="noopener">
-            <img src="<?php echo $path; ?>assets/images/v_4.jpg">
-          </a>
-        </li>
-        <li>
           <a href="https://www.46job.jp/" target="_blank" rel="noopener">
             <img src="<?php echo $path; ?>assets/images/yj.gif">
           </a>
