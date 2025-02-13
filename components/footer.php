@@ -4,6 +4,12 @@
     <nav class="footer__banner container">
       <ul>
         <li>
+          <div>
+            <a rel="nofollow" href="https://kansai.qzin.jp/kireiosk/?v=official" target="_blank"><img
+                src="https://ad.qzin.jp/img/vanilla200-40.gif" alt="KIREIで稼ぐならバニラ求人"></a>
+          </div>
+        </li>
+        <li>
           <a href="https://work-mikke.jp/" target="_blank" rel="noopener">
             <img src="<?php echo $path; ?>assets/images/mikke.jpg">
           </a>
