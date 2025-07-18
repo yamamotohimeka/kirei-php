@@ -5,8 +5,9 @@
       <ul>
         <li>
           <div>
-            <a rel="nofollow" href="https://kansai.qzin.jp/kireiosk/?v=official" target="_blank"><img
-                src="https://ad.qzin.jp/img/vanilla200-40.gif" alt="KIREIで稼ぐならバニラ求人"></a>
+            <a rel="nofollow" href="https://kansai.qzin.jp/kireiosk/?v=official" target="_blank">
+              <img src="https://ad.qzin.jp/img/vanilla468-60.gif" alt="KIREIで稼ぐならバニラ求人">
+            </a>
           </div>
         </li>
         <li>
