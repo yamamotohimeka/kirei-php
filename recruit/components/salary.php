@@ -13,7 +13,7 @@
       <h4 class="fadeIn1">在籍キャスト平均給与</h4>
       <div class="salary__avg fadeIn1">
         <div class="ttl">日給<br>平均</div>
-        <div class="price">62,000<span>円</span></div>
+        <div class="price">84,000<span>円</span></div>
       </div>
       <div class="salary__avg fadeIn1">
         <div class="ttl">月給<br>平均</div>
